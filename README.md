@@ -51,23 +51,6 @@ Fichiers principaux :
 
 Le mode en ligne repose sur une communication via sockets TCP.
 
-## Structure du projet
-ultimate-tic-tac-toe/
-├── AIminimaxV1.py
-├── mainAI.py
-├── tictactoe.py
-├── menu.py
-├── server.py
-├── client.py
-├── tictactoe_online_host.py
-├── tictactoe_online_guest.py
-├── tictactoe_online_host_AI.py
-├── tictactoe_online_guest_AI.py
-├── theme.json
-├── music/
-└── README.md
-
-
 ## Règles du jeu
 - Le plateau principal contient 9 sous-plateaux
 - Le coup joué détermine le sous-plateau où le prochain joueur doit jouer
