@@ -33,13 +33,8 @@ Elle peut être utilisée :
 1. Installer les dépendances :
 pip install pygame pygame_gui numpy
 
-css
-Copier le code
 2. Lancer le menu principal :
 python menu.py
-
-markdown
-Copier le code
 
 Depuis le menu, il est possible de :
 - Jouer en local
@@ -72,8 +67,6 @@ ultimate-tic-tac-toe/
 ├── music/
 └── README.md
 
-markdown
-Copier le code
 
 ## Règles du jeu
 - Le plateau principal contient 9 sous-plateaux
@@ -82,13 +75,12 @@ Copier le code
 - Le premier joueur à aligner 3 sous-plateaux gagnés remporte la partie
 
 ## Auteur
-Maëla Brelivet – Étudiante ingénieure en Data Science, EURECOM
+Maëla Brelivet, Lucas Delhommeau, Wissam Mecherfi, Nour El Habib – Étudiants ingénieurs à EURECOM
 
 ## Licence
 Ce projet est sous licence MIT (voir le fichier LICENSE)
 
 ## Améliorations possibles
-- Alpha-Beta pruning pour l’IA
 - Fonction heuristique améliorée
 - IA avec niveaux de difficulté
 - Sauvegarde et reprise de parties
