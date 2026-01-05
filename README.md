@@ -1,70 +1,83 @@
-# Ultimate Tic-Tac-Toe – IA Minimax & Mode en ligne
+# Galactic XO – Ultimate Tic-Tac-Toe avec IA Minimax
 
 ## Description
-Ce projet implémente le jeu Ultimate Tic-Tac-Toe avec une interface graphique et plusieurs modes de jeu :
-- Joueur contre joueur
-- Joueur contre IA
-- Jeu en ligne (client/serveur)
-- IA basée sur l’algorithme Minimax
+**Galactic XO** est une implémentation du jeu **Ultimate Tic-Tac-Toe**, une version avancée du morpion classique, dotée d’une **interface graphique immersive** développée avec **Pygame**.
 
-L’interface est développée avec Pygame, et le jeu peut être joué localement ou à distance via des sockets.
+Le jeu permet de jouer :
+- en local ou en ligne (client / serveur)
+- en joueur contre joueur ou joueur contre IA
 
-## Fonctionnalités principales
-- Ultimate Tic-Tac-Toe (règles complètes)
-- IA utilisant Minimax
-- Interface graphique avec Pygame
+L’intelligence artificielle repose sur l’algorithme **Minimax**, permettant à l’IA de prendre des décisions optimales.
+
+---
+
+## Aperçu de l’interface
+
+### Menu principal
+![Menu principal](image/menu_main.png)
+
+### Choix du mode de partie
+Sélection entre une partie **locale** ou **en ligne**.
+![Choix du mode de partie](image/menu_mode.png)
+
+### Sélection du type de joueurs
+Choix entre **Player vs Player** et **Player vs AI**.
+![Sélection du type de joueurs](image/mode_selection.png)
+
+### Écran de victoire
+Affichage du vainqueur en fin de partie.
+![Écran de victoire](image/winner_ai.png)
+
+---
+
+## Fonctionnalités
+- Implémentation complète de l’**Ultimate Tic-Tac-Toe**
+- Interface graphique interactive
+- IA basée sur l’algorithme **Minimax**
 - Mode multijoueur en ligne (host / guest)
-- IA jouable en local ou en ligne
-- Optimisation via mémoïsation
+- Optimisation des calculs par **mémoïsation**
+
+---
 
 ## Intelligence Artificielle
-L’IA est implémentée dans le fichier `AIminimaxV1.py`.  
-Caractéristiques :
-- Algorithme Minimax récursif
-- Gestion de la profondeur de recherche
-- Fonction d’évaluation des états du plateau
-- Mémoïsation pour optimiser les calculs
+L’IA est implémentée dans le fichier `AIminimaxV1.py`.
 
-Elle peut être utilisée :
-- en mode local (`mainAI.py`)
-- comme joueur distant (guest ou host)
+Elle utilise :
+- un algorithme **Minimax récursif**
+- une profondeur de recherche contrôlée
+- une fonction d’évaluation des états du plateau
+- une mémoïsation des états pour améliorer les performances
+
+---
 
 ## Installation et exécution
-1. Installer les dépendances :
+
+### 1. Installation des dépendances
+```bash
 pip install pygame pygame_gui numpy
-
-2. Lancer le menu principal :
+```
+### 2. Lancement du jeu
+```bash
 python menu.py
-
-Depuis le menu, il est possible de :
-- Jouer en local
-- Jouer contre l’IA
-- Héberger une partie en ligne
-- Rejoindre une partie en ligne
-
-### Mode en ligne
-Fichiers principaux :
-- `server.py` : serveur du jeu
-- `client.py` : client
-- `tictactoe_online_host.py` et `tictactoe_online_guest.py` : modes en ligne
-- Versions IA disponibles (`*_AI.py`)
-
-Le mode en ligne repose sur une communication via sockets TCP.
+```
+Le menu permet de choisir le mode de jeu, le type de joueurs et, le cas échéant, d’héberger ou de rejoindre une partie en ligne.
 
 ## Règles du jeu
-- Le plateau principal contient 9 sous-plateaux
-- Le coup joué détermine le sous-plateau où le prochain joueur doit jouer
+- Le plateau principal est composé de 9 sous-plateaux
+- Le coup joué impose le sous-plateau du tour suivant
 - Un sous-plateau gagné est verrouillé
-- Le premier joueur à aligner 3 sous-plateaux gagnés remporte la partie
+- L’alignement de 3 sous-plateaux gagnés permet de remporter la partie
 
-## Auteur
-Maëla Brelivet, Lucas Delhommeau, Wissam Mecherfi, Nour El Habib – Étudiants ingénieurs à EURECOM
-
-## Licence
-Ce projet est sous licence MIT (voir le fichier LICENSE)
+## Auteurs
+- Maëla Brelivet
+- Lucas Delhommeau
+- Wissam Mecherfi
+- Nour El Habib
+Étudiants ingénieurs à EURECOM
 
 ## Améliorations possibles
-- Fonction heuristique améliorée
+- Fonction heuristique plus avancée
 - IA avec niveaux de difficulté
 - Sauvegarde et reprise de parties
 - Mode tournoi
+- Optimisation Minimax avec Alpha-Beta pruning
