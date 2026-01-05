@@ -1,7 +1,0 @@
-981.1324999999999
-
-981.1324999999999 (just change the first grid-score)
-
-981.1324999999999 (add Victory)
-
-1011.30575 (with memory and depht 5)
