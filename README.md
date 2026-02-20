@@ -73,6 +73,7 @@ Le menu permet de choisir le mode de jeu, le type de joueurs et, le cas échéan
 - Lucas Delhommeau
 - Wissam Mecherfi
 - Nour El Habib
+  
 Étudiants ingénieurs à EURECOM
 
 ## Améliorations possibles
